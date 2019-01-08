@@ -104,14 +104,14 @@ ITEM_PIPELINES = {
 
 # SPLASH_URL = 'http://192.168.99.100:8050'
 
-MONGO_URI = 'localhost'
+MONGO_URI = 'mongodb://192.168.20.59'
 MONGO_DATABASE = 'zhihu'
 
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
-REDIS_URL = 'redis://localhost:123456@127.0.0.1:6379'
+REDIS_URL = 'redis://localhost:123456@192.168.20.59:6379'
 
 
 SCHEDULER_FLUSH_ON_START = False
